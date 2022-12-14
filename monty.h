@@ -53,6 +53,7 @@ typedef struct bus_s
 
 extern bus_t bus;
 
+
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
@@ -64,7 +65,6 @@ extern bus_t bus;
 
 typedef struct instruction_s
 {
-
 	char *opcode;
 
 	void (*f)(stack_t **stack, unsigned int line_number);
